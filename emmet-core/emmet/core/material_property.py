@@ -1,7 +1,7 @@
 """ Core definition of a Materials Document """
 from __future__ import annotations
 
-from typing import Sequence, Type, TypeVar, Union, List, Optional
+from typing import List, Optional, Type, TypeVar, Union
 
 from pydantic import Field, field_validator
 from pymatgen.core import Structure
@@ -45,11 +45,11 @@ class PropertyDoc(StructureMetadata):
         default_factory=datetime.utcnow,
     )
 
-    origins: Sequence[PropertyOrigin] = Field(
+    origins: list[PropertyOrigin] = Field(
         [], description="Dictionary for tracking the provenance of properties."
     )
 
-    warnings: Sequence[str] = Field(
+    warnings: list[str] = Field(
         [], description="Any warnings related to this property."
     )
 
