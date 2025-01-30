@@ -1,4 +1,5 @@
 """ Core definition of Spectrum document """
+
 from datetime import datetime
 from typing import List
 
@@ -6,6 +7,7 @@ from pydantic import Field
 
 from emmet.core.mpid import MPID
 from emmet.core.structure import StructureMetadata
+from emmet.core.utils import utcnow
 
 
 class SpectrumDoc(StructureMetadata):
@@ -30,7 +32,7 @@ class SpectrumDoc(StructureMetadata):
 
     last_updated: datetime = Field(
         description="Timestamp for the most recent calculation update for this property.",
-        default_factory=datetime.utcnow,
+        default_factory=utcnow,
     )
 
     warnings: List[str] = Field(
