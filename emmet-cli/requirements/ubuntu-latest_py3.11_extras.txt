@@ -132,13 +132,13 @@ monty==2025.3.3
     #   pymatgen
 mpmath==1.3.0
     # via sympy
-mypy==1.17.1
+mypy==1.18.1
     # via emmet-cli (setup.py)
 mypy-extensions==1.1.0
     # via
     #   emmet-cli (setup.py)
     #   mypy
-narwhals==2.4.0
+narwhals==2.5.0
     # via plotly
 natsort==8.4.0
     # via mkdocs-awesome-pages-plugin
@@ -194,7 +194,7 @@ pycodestyle==2.14.0
     # via
     #   emmet-cli (setup.py)
     #   flake8
-pydantic==2.11.7
+pydantic==2.11.9
     # via
     #   emmet-core
     #   pydantic-settings
@@ -223,7 +223,7 @@ pymdown-extensions==10.16.1
     # via
     #   mkdocs-material
     #   mkdocstrings
-pyparsing==3.2.3
+pyparsing==3.2.4
     # via
     #   bibtexparser
     #   matplotlib
@@ -263,7 +263,7 @@ ruamel-yaml==0.18.15
     #   pymatgen
 ruamel-yaml-clib==0.2.12
     # via ruamel-yaml
-scipy==1.16.1
+scipy==1.16.2
     # via pymatgen
 six==1.17.0
     # via python-dateutil
@@ -279,7 +279,7 @@ tornado==6.5.2
     # via livereload
 tqdm==4.67.1
     # via pymatgen
-types-requests==2.32.4.20250809
+types-requests==2.32.4.20250913
     # via emmet-cli (setup.py)
 types-setuptools==80.9.0.20250822
     # via emmet-cli (setup.py)
